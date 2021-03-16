@@ -1,4 +1,4 @@
-from exercises.chapter_1 import frequent_words
+from exercises.chapter_1 import frequent_words, pattern_to_number
 
 
 def read_rosalind_1b(path):
@@ -12,10 +12,7 @@ def read_rosalind_1b(path):
 
 
 def main():
-    path_1b = "input_data/rosalind_ba1b.txt"
-    text, k = read_rosalind_1b(path_1b)
-    results = frequent_words(text, k)
-    print(" ".join(results))
+    print(pattern_to_number("GATCTTTAATTCACATTTTGGTTCTATC"))
 
 
 if __name__ == "__main__":
